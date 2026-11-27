@@ -1,66 +1,369 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitalbotschafter Pirmasenser Land</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        :root{
-            --primary:#005A9C;
-            --secondary:#4CAF50;
-            --accent:#FFB900;
-            --light:#f5f7fa;
-            --dark:#1f2937;
-        }
+<title>Digitalbotschafter Pirmasenser Land</title>
 
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Segoe UI, Arial, sans-serif;
-        }
+<style>
 
-        body{
-            background:var(--light);
-            color:var(--dark);
-            line-height:1.6;
-        }
+:root{
+    --primary:#0F4C81;
+    --secondary:#1D70B8;
+    --accent:#D9A520;
+    --light:#F8F9FA;
+    --dark:#2D3748;
+}
 
-        header{
-            background:linear-gradient(135deg,var(--primary),#0078D4);
-            color:white;
-            padding:3rem 2rem;
-            text-align:center;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        nav{
-            background:white;
-            padding:1rem;
-            box-shadow:0 2px 5px rgba(0,0,0,0.1);
-            text-align:center;
-        }
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.7;
+}
 
-        nav a{
-            color:var(--primary);
-            text-decoration:none;
-            margin:0 1rem;
-            font-weight:bold;
-        }
+.hero{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    color:white;
+    padding:4rem 2rem;
+}
 
-        .container{
-            max-width:1200px;
-            margin:auto;
-            padding:2rem;
-        }
+.container{
+    max-width:1200px;
+    margin:auto;
+}
 
-        .card{
-            background:white;
-            padding:2rem;
-            border-radius:12px;
-            margin-bottom:2rem;
-            box-shadow:0 3px 10px rgba(0,0,0,.08);
-        }
+.chapter{
+    color:#FFD700;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:3px;
+    margin-bottom:1rem;
+}
 
-        h1,h2{
-            margin
+.hero h1{
+    font-size:clamp(2.5rem,6vw,4.5rem);
+    line-height:1.1;
+    margin-bottom:1rem;
+}
+
+.subtitle{
+    font-size:1.3rem;
+    margin-bottom:2rem;
+}
+
+.hero-actions{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:0.9rem 1.5rem;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:var(--accent);
+    color:white;
+}
+
+.btn-secondary{
+    background:white;
+    color:var(--primary);
+}
+
+section{
+    padding:3rem 1rem;
+}
+
+h2{
+    color:var(--primary);
+    margin-bottom:1.5rem;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:1.5rem;
+}
+
+.card{
+    background:white;
+    padding:1.8rem;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    text-decoration:none;
+    color:var(--dark);
+}
+
+.card:hover{
+    transform:translateY(-3px);
+    transition:.2s;
+}
+
+.featured{
+    border-left:8px solid var(--accent);
+}
+
+.help-box{
+    background:#FFF7DD;
+    border-left:8px solid var(--accent);
+    padding:2rem;
+    border-radius:12px;
+}
+
+footer{
+    background:white;
+    text-align:center;
+    padding:3rem 1rem;
+    margin-top:2rem;
+}
+
+footer a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+@media (max-width:768px){
+
+.hero{
+    padding:3rem 1.5rem;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.subtitle{
+    font-size:1.1rem;
+}
+
+section{
+    padding:2rem 1rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<div class="container">
+
+<p class="chapter">
+DIGITALBOTSCHAFTER PIRMASENSER LAND
+</p>
+
+<h1>
+Digitale Hilfe<br>
+verständlich erklärt
+</h1>
+
+<p class="subtitle">
+Sicher. Einfach. Persönlich.
+</p>
+
+<div class="hero-actions">
+
+<a class="btn btn-primary"
+href="#beitraege">
+📚 Fachbeiträge
+</a>
+
+<a class="btn btn-secondary"
+href="kontakt.html">
+📨 Hilfe anfordern
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section>
+
+<h2>Willkommen</h2>
+
+<div class="card">
+
+<p>
+Die Digitalbotschafter Pirmasenser Land unterstützen Bürgerinnen und Bürger bei digitalen Fragen.
+</p>
+
+<p>
+Von Smartphone und WhatsApp über Datensicherheit bis hin zu Künstlicher Intelligenz erklären wir digitale Themen verständlich und praxisnah.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Themenwelten</h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>📱 Smartphone & Tablet</h3>
+<p>
+Tipps, Einstellungen und praktische Hilfen für den digitalen Alltag.
+</p>
+</div>
+
+<div class="card">
+<h3>🔒 Sicherheit & Datenschutz</h3>
+<p>
+Passwörter, Betrugsschutz und sicheres Verhalten im Internet.
+</p>
+</div>
+
+<div class="card">
+<h3>☁️ Digitale Vorsorge</h3>
+<p>
+Datensicherung, Konten und wichtige digitale Dokumente.
+</p>
+</div>
+
+<div class="card">
+<h3>🤖 KI & Copilot</h3>
+<p>
+Künstliche Intelligenz verständlich erklärt.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="beitraege">
+
+<h2>Aktuell im Fokus</h2>
+
+<div class="card featured">
+
+<h3>
+💾 Datensicherung auf Smartphone und Tablet
+</h3>
+
+<p>
+Was tun, wenn der Cloudspeicher nicht ausreicht?
+</p>
+
+<br>
+
+<a href="digitale-vorsorge/datensicherung-smartphone-tablet.html">
+➡ Beitrag lesen
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Schnelle Hilfe</h2>
+
+<div class="help-box">
+
+<h3>📨 Fragen oder Unterstützungsbedarf?</h3>
+
+<p>
+Sie haben Fragen zu Smartphone, Tablet, Internet oder digitalen Diensten?
+</p>
+
+<p>
+Die Digitalbotschafter helfen gerne weiter.
+</p>
+
+<br>
+
+<a href="kontakt.html">
+Kontaktformular öffnen →
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Community & Veranstaltungen</h2>
+
+<div class="card-grid">
+
+<a class="card"
+href="https://teams.live.com/l/community/FEAFclfBdf7HnDi-gc">
+
+<h3>👥 Teams Community</h3>
+
+<p>
+Austausch mit anderen Interessierten und Digitalbotschaftern.
+</p>
+
+</a>
+
+<div class="card">
+
+<h3>📅 Veranstaltungen</h3>
+
+<p>
+Kurse, Vorträge und Informationsveranstaltungen.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>
+Digitalbotschafter Pirmasenser Land
+</h3>
+
+<p>
+Digitale Hilfe verständlich erklärt.
+</p>
+
+<p>
+Sicher. Einfach. Persönlich.
+</p>
+
+<br>
+
+<a href="impressum.html">Impressum</a>
+|
+<a href="datenschutz.html">Datenschutz</a>
+|
+<a href="kontakt.html">Kontakt</a>
+
+</footer>
+
+</body>
+</html>
