@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,8 +16,13 @@
     --dark:#2D3748;
 }
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:'Segoe UI',sans-serif;
     background:var(--light);
     color:var(--dark);
@@ -42,31 +46,45 @@ body{
 
 .chapter{
     color:#FFD700;
-    letter-spacing:2px;
-    font-weight:bold;
     text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:2px;
+    margin-bottom:1rem;
 }
 
 .hero h1{
     font-size:3rem;
-    margin:1rem 0;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    font-size:1.1rem;
 }
 
 section{
     padding:4rem 2rem;
 }
 
+h2{
+    color:var(--primary);
+    margin-bottom:1.5rem;
+}
+
 .card-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:1.5rem;
 }
 
 .card{
     background:white;
-    border-radius:15px;
     padding:1.5rem;
+    border-radius:15px;
     box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    margin-bottom:0.5rem;
 }
 
 .tip{
@@ -74,6 +92,7 @@ section{
     border-left:6px solid var(--accent);
     padding:1rem;
     border-radius:10px;
+    margin-top:2rem;
 }
 
 .remember{
@@ -83,17 +102,192 @@ section{
     border-radius:10px;
 }
 
-.warning{
-    background:#FFF4E5;
-    border-left:6px solid #E67E22;
-    padding:1rem;
-    border-radius:10px;
+footer{
+    background:white;
+    text-align:center;
+    padding:3rem;
+    margin-top:3rem;
+}
+
+a{
+    color:white;
+    text-decoration:none;
 }
 
 </style>
 
 </head>
+
 <body>
+
+<header class="hero">
+
+<div class="container">
+
+<a href="../index.html">
+← Zur Übersicht
+</a>
+
+<p class="chapter">
+Digitale Vorsorge
+</p>
+
+<h1>
+Datensicherung auf Smartphone und Tablet
+</h1>
+
+<p>
+Was tun, wenn der Cloudspeicher nicht ausreicht?
+</p>
+
+</div>
+
+</header>
+
+<main class="container">
+
+<section>
+
+<h2>
+Warum Datensicherung wichtig ist
+</h2>
+
+<p>
+Geht ein Gerät verloren, wird gestohlen oder geht kaputt,
+können wichtige Daten verloren gehen.
+</p>
+
+<br>
+
+<ul>
+<li>Familienfotos</li>
+<li>Urlaubsbilder</li>
+<li>Kontakte</li>
+<li>Dokumente</li>
+<li>Messenger-Nachrichten</li>
+</ul>
+
+</section>
+
+<section>
+
 <h2>
 Möglichkeiten der Datensicherung
 </h2>
+
+<div class="card-grid">
+
+<div class="card">
+<h3>🖥️ Sicherung auf dem PC</h3>
+<p>
+Fotos und Dateien können per USB-Kabel
+auf einen Windows-PC übertragen werden.
+</p>
+</div>
+
+<div class="card">
+<h3>💽 Externe Festplatte</h3>
+<p>
+Viel Speicherplatz für Fotos, Videos
+und wichtige Dokumente.
+</p>
+</div>
+
+<div class="card">
+<h3>🔌 USB-Stick</h3>
+<p>
+Ideal für Dokumente und kleinere
+Datensicherungen.
+</p>
+</div>
+
+<div class="card">
+<h3>🏠 NAS</h3>
+<p>
+Automatische Datensicherung
+im eigenen Zuhause.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+Die 3-2-1-Regel
+</h2>
+
+<div class="remember">
+
+<h3>📌 Merke Dir</h3>
+
+<p>
+Empfohlen werden:
+</p>
+
+<ul>
+<li>3 Kopien der wichtigen Daten</li>
+<li>2 unterschiedliche Speichermedien</li>
+<li>1 Sicherung außerhalb des Geräts</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+Praktische Empfehlungen
+</h2>
+
+<div class="tip">
+
+<h3>💡 Mein Tipp</h3>
+
+<p>
+Fotos und wichtige Dokumente sollten
+niemals ausschließlich auf dem Smartphone
+gespeichert sein.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+Fazit
+</h2>
+
+<p>
+Cloudspeicher ist bequem, aber nicht die einzige
+Möglichkeit zur Datensicherung.
+</p>
+
+<p>
+Bereits ein PC und eine externe Festplatte bieten
+eine zuverlässige und kostengünstige Lösung.
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<h3>Digitalbotschafter Pirmasenser Land</h3>
+
+<p>Digitale Hilfe verständlich erklärt.</p>
+
+<p>
+Sicher. Einfach. Persönlich.
+</p>
+
+</footer>
+
+</body>
+</html>
